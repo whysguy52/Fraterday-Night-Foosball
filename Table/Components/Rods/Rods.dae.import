@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/ball.dae-23863e81143e4aabbb105e4f7645b8aa.scn"
+path="res://.import/Rods.dae-b293aaa9d2b48d1a55c990b7efb4e889.scn"
 
 [deps]
 
-source_file="res://Table/Components/ball.dae"
-dest_files=[ "res://.import/ball.dae-23863e81143e4aabbb105e4f7645b8aa.scn" ]
+source_file="res://Table/Components/Rods/Rods.dae"
+dest_files=[ "res://.import/Rods.dae-b293aaa9d2b48d1a55c990b7efb4e889.scn" ]
 
 [params]
 

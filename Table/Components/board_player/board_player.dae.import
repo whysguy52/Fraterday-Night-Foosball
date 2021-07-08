@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Table.dae-1a5688fa0f98cdcc5e723ec9eae4bfdb.scn"
+path="res://.import/board_player.dae-243d6706d7b2012bbeaad404f82db87f.scn"
 
 [deps]
 
-source_file="res://Table/Table.dae"
-dest_files=[ "res://.import/Table.dae-1a5688fa0f98cdcc5e723ec9eae4bfdb.scn" ]
+source_file="res://Table/Components/board_player/board_player.dae"
+dest_files=[ "res://.import/board_player.dae-243d6706d7b2012bbeaad404f82db87f.scn" ]
 
 [params]
 
