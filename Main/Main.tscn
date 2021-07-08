@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Table/Table.tscn" type="PackedScene" id=1]
+
+[node name="Main" type="Spatial"]
+
+[node name="Spatial" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.754767, 0.655993, 0, -0.655993, 0.754767, 0, 0.885194, 1.11848 )
+
+[node name="Table" parent="." instance=ExtResource( 1 )]
