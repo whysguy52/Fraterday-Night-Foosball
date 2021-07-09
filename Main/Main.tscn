@@ -69,4 +69,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.890141, 0.455987 )
 environment = SubResource( 4 )
 
 [node name="ball" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0756843, 0.0217627, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0756843, 1.08621, 0.425331 )
