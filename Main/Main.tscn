@@ -31,7 +31,7 @@ controller_id = 2
 [node name="Hand_R" parent="ARVROrigin/RightController" instance=ExtResource( 5 )]
 
 [node name="Table" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.924346, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.915194, 0 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 2 )
