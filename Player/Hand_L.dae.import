@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Hand_R.dae-3666efef40bfcf8f820638893edf68ac.scn"
+path="res://.import/Hand_L.dae-c025c64142919c052500847b6b400bdc.scn"
 
 [deps]
 
-source_file="res://Hands/Hand_R.dae"
-dest_files=[ "res://.import/Hand_R.dae-3666efef40bfcf8f820638893edf68ac.scn" ]
+source_file="res://Player/Hand_L.dae"
+dest_files=[ "res://.import/Hand_L.dae-c025c64142919c052500847b6b400bdc.scn" ]
 
 [params]
 
