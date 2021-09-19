@@ -48,6 +48,7 @@ shape = SubResource( 2 )
 
 [node name="Hand_Terminal" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.441224, -0.897397, 0, 0.897397, 0.441224, 0.0352092, 0.0879126, -0.0781598 )
+visible = false
 mesh = SubResource( 3 )
 material/0 = null
 script = ExtResource( 2 )
