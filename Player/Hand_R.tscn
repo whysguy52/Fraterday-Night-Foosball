@@ -20,7 +20,7 @@ radius = 0.06
 [node name="RightController" type="ARVRController"]
 controller_id = 2
 
-[node name="Hand_R" type="StaticBody" parent="."]
+[node name="Hand_R" type="Area" parent="."]
 
 [node name="Sphere" type="MeshInstance" parent="Hand_R"]
 transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0.051735, 0.006677, 0.02108 )

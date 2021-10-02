@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Table/Components/Rods/Rod_Metal.material" type="Material" id=5]
 
-[sub_resource type="ArrayMesh" id=16]
+[sub_resource type="ArrayMesh" id=1]
 resource_name = "Cylinder"
 surfaces/0 = {
 "aabb": AABB( -0.00793844, -0.00793856, -0.52705, 0.0158769, 0.0158871, 1.05411 ),
@@ -18,11 +18,11 @@ surfaces/0 = {
 "vertex_count": 321
 }
 
-[sub_resource type="CylinderShape" id=24]
+[sub_resource type="CylinderShape" id=2]
 radius = 0.00786644
 height = 1.05372
 
-[sub_resource type="ArrayMesh" id=17]
+[sub_resource type="ArrayMesh" id=3]
 resource_name = "Cylinder.005"
 surfaces/0 = {
 "aabb": AABB( -0.00793839, -0.00793856, -0.614362, 0.015877, 0.0158871, 1.22873 ),
@@ -38,11 +38,11 @@ surfaces/0 = {
 "vertex_count": 315
 }
 
-[sub_resource type="CylinderShape" id=25]
+[sub_resource type="CylinderShape" id=4]
 radius = 0.00773564
 height = 1.22807
 
-[sub_resource type="ArrayMesh" id=18]
+[sub_resource type="ArrayMesh" id=5]
 resource_name = "Cylinder.006"
 surfaces/0 = {
 "aabb": AABB( -0.00793844, -0.00793856, -0.550862, 0.015877, 0.0158871, 1.10173 ),
@@ -58,11 +58,11 @@ surfaces/0 = {
 "vertex_count": 320
 }
 
-[sub_resource type="CylinderShape" id=26]
+[sub_resource type="CylinderShape" id=6]
 radius = 0.0074836
 height = 1.09414
 
-[sub_resource type="ArrayMesh" id=19]
+[sub_resource type="ArrayMesh" id=7]
 resource_name = "Cylinder.003"
 surfaces/0 = {
 "aabb": AABB( -0.00793844, -0.00793856, -0.493713, 0.0158769, 0.0158871, 0.987435 ),
@@ -78,11 +78,11 @@ surfaces/0 = {
 "vertex_count": 320
 }
 
-[sub_resource type="CylinderShape" id=27]
+[sub_resource type="CylinderShape" id=8]
 radius = 0.00781072
 height = 0.986602
 
-[sub_resource type="ArrayMesh" id=20]
+[sub_resource type="ArrayMesh" id=9]
 resource_name = "Cylinder.002"
 surfaces/0 = {
 "aabb": AABB( -0.00793868, -0.00793844, -0.493713, 0.015877, 0.0158869, 0.987435 ),
@@ -98,11 +98,11 @@ surfaces/0 = {
 "vertex_count": 318
 }
 
-[sub_resource type="CylinderShape" id=28]
+[sub_resource type="CylinderShape" id=10]
 radius = 0.00758492
 height = 0.980969
 
-[sub_resource type="ArrayMesh" id=21]
+[sub_resource type="ArrayMesh" id=11]
 resource_name = "Cylinder.007"
 surfaces/0 = {
 "aabb": AABB( -0.0079385, -0.00793856, -0.550862, 0.015877, 0.0158871, 1.10173 ),
@@ -118,11 +118,11 @@ surfaces/0 = {
 "vertex_count": 312
 }
 
-[sub_resource type="CylinderShape" id=29]
+[sub_resource type="CylinderShape" id=12]
 radius = 0.00730397
 height = 1.07839
 
-[sub_resource type="ArrayMesh" id=22]
+[sub_resource type="ArrayMesh" id=13]
 resource_name = "Cylinder.004"
 surfaces/0 = {
 "aabb": AABB( -0.00793862, -0.00793856, -0.614362, 0.015877, 0.0158871, 1.22873 ),
@@ -138,11 +138,11 @@ surfaces/0 = {
 "vertex_count": 305
 }
 
-[sub_resource type="CylinderShape" id=30]
+[sub_resource type="CylinderShape" id=14]
 radius = 0.00771406
 height = 1.20957
 
-[sub_resource type="ArrayMesh" id=23]
+[sub_resource type="ArrayMesh" id=15]
 resource_name = "Cylinder.001"
 surfaces/0 = {
 "aabb": AABB( -0.0079385, -0.00793856, -0.52705, 0.0158769, 0.0158871, 1.05411 ),
@@ -158,7 +158,7 @@ surfaces/0 = {
 "vertex_count": 319
 }
 
-[sub_resource type="CylinderShape" id=31]
+[sub_resource type="CylinderShape" id=16]
 radius = 0.00795346
 height = 1.04465
 
@@ -168,164 +168,86 @@ height = 1.04465
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5334, -1.81899e-10, 0 )
 
 [node name="RodMesh1" type="MeshInstance" parent="Rod1"]
-mesh = SubResource( 16 )
+mesh = SubResource( 1 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod1/RodMesh1"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.219772 )
-
-[node name="Player2" type="Spatial" parent="Rod1/RodMesh1"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.0204709 )
-
-[node name="Player3" type="Spatial" parent="Rod1/RodMesh1"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.260287 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod1"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 24 )
+shape = SubResource( 2 )
 
 [node name="Rod2" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.381, -1.81899e-10, 0 )
 
 [node name="Rod2" type="MeshInstance" parent="Rod2"]
-mesh = SubResource( 17 )
+mesh = SubResource( 3 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod2/Rod2"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.69794e-05, 1.81899e-10, -0.0975984 )
-
-[node name="Player2" type="Spatial" parent="Rod2/Rod2"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.1437 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod2"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 25 )
+shape = SubResource( 4 )
 
 [node name="Rod3" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2286, -1.81899e-10, 0 )
 
 [node name="Rod3" type="MeshInstance" parent="Rod3"]
-mesh = SubResource( 18 )
+mesh = SubResource( 5 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod3/Rod3"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.115884 )
-
-[node name="Player2" type="Spatial" parent="Rod3/Rod3"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.0682666 )
-
-[node name="Player3" type="Spatial" parent="Rod3/Rod3"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.252417 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod3"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 26 )
+shape = SubResource( 6 )
 
 [node name="Rod4" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0762, -1.81899e-10, 0 )
 
 [node name="Rod4" type="MeshInstance" parent="Rod4"]
-mesh = SubResource( 19 )
+mesh = SubResource( 7 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod4/Rod4"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.173041 )
-
-[node name="Player2" type="Spatial" parent="Rod4/Rod4"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.309561 )
-
-[node name="Player3" type="Spatial" parent="Rod4/Rod4"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.0682601 )
-
-[node name="Player4" type="Spatial" parent="Rod4/Rod4"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.18891 )
-
-[node name="Player5" type="Spatial" parent="Rod4/Rod4"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.05239 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod4"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 27 )
+shape = SubResource( 8 )
 
 [node name="Rod5" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0762, -1.16415e-10, 0 )
 
 [node name="Rod5" type="MeshInstance" parent="Rod5"]
-mesh = SubResource( 20 )
+mesh = SubResource( 9 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod5/Rod5"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.16415e-10, -0.173041 )
-
-[node name="Player2" type="Spatial" parent="Rod5/Rod5"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.16415e-10, -0.05239 )
-
-[node name="Player3" type="Spatial" parent="Rod5/Rod5"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.16415e-10, 0.0682598 )
-
-[node name="Player4" type="Spatial" parent="Rod5/Rod5"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.16415e-10, 0.18891 )
-
-[node name="Player5" type="Spatial" parent="Rod5/Rod5"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.16415e-10, 0.309561 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod5"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 28 )
+shape = SubResource( 10 )
 
 [node name="Rod6" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2286, -1.81899e-10, 0 )
 
 [node name="Rod6" type="MeshInstance" parent="Rod6"]
-mesh = SubResource( 21 )
+mesh = SubResource( 11 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod6/Rod6"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.115884 )
-
-[node name="Player2" type="Spatial" parent="Rod6/Rod6"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.0682665 )
-
-[node name="Player3" type="Spatial" parent="Rod6/Rod6"]
-transform = Transform( -4.40532e-08, 0, 1.00782, 0, 1.00782, 0, -1.00782, 0, -4.40532e-08, 0, 1.81899e-10, 0.252418 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod6"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 29 )
+shape = SubResource( 12 )
 
 [node name="Rod7" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.381, -1.81899e-10, 0 )
 
 [node name="Rod7" type="MeshInstance" parent="Rod7"]
-mesh = SubResource( 22 )
+mesh = SubResource( 13 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod7/Rod7"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.0975986 )
-
-[node name="Player2" type="Spatial" parent="Rod7/Rod7"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.1437 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod7"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 30 )
+shape = SubResource( 14 )
 
 [node name="Rod8" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5334, -1.81899e-10, 0 )
 
 [node name="Rod8" type="MeshInstance" parent="Rod8"]
-mesh = SubResource( 23 )
+mesh = SubResource( 15 )
 material/0 = null
-
-[node name="Player1" type="Spatial" parent="Rod8/Rod8"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, -0.219772 )
-
-[node name="Player2" type="Spatial" parent="Rod8/Rod8"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.0204707 )
-
-[node name="Player3" type="Spatial" parent="Rod8/Rod8"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.81899e-10, 0.260287 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Rod8"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 31 )
+shape = SubResource( 16 )

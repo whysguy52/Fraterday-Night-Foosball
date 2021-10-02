@@ -1,17 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Table/Components/Table/Table.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Table/Components/Ball/ball.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Main/Main.gd" type="Script" id=3]
 [ext_resource path="res://Player/Hand_L.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/Hand_R.tscn" type="PackedScene" id=6]
-
-[sub_resource type="ProceduralSky" id=6]
-sky_horizon_color = Color( 1, 0.560784, 0, 1 )
-
-[sub_resource type="Environment" id=7]
-background_mode = 2
-background_sky = SubResource( 6 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 3 )
@@ -29,9 +22,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.823561 )
 
 [node name="Table" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.915194, 0 )
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 7 )
 
 [node name="ball" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.60954e-05, 0.892462, 0.398793 )

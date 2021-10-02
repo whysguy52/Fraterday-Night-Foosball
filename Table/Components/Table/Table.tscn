@@ -120,27 +120,27 @@ material/0 = null
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Play_Field"]
+[node name="Play_Field" type="StaticBody" parent="Play_Field"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Play_Field/StaticBody"]
+[node name="Play_Field_Collision" type="CollisionShape" parent="Play_Field/Play_Field"]
 shape = SubResource( 3 )
 
 [node name="Return_Hole2" type="MeshInstance" parent="."]
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Return_Hole2"]
+[node name="Return_Hole2" type="StaticBody" parent="Return_Hole2"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Return_Hole2/StaticBody"]
+[node name="Return_Hole2_Collision" type="CollisionShape" parent="Return_Hole2/Return_Hole2"]
 shape = SubResource( 5 )
 
 [node name="Return_Hole1" type="MeshInstance" parent="."]
 mesh = SubResource( 6 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Return_Hole1"]
+[node name="Return_Hole1" type="StaticBody" parent="Return_Hole1"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Return_Hole1/StaticBody"]
+[node name="Return_Hole1_Collision" type="CollisionShape" parent="Return_Hole1/Return_Hole1"]
 shape = SubResource( 7 )
 
 [node name="Drop_Hole" type="MeshInstance" parent="."]
@@ -148,21 +148,19 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.37881
 mesh = SubResource( 8 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Drop_Hole"]
+[node name="Drop_Hole" type="StaticBody" parent="Drop_Hole"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Drop_Hole/StaticBody"]
+[node name="Drop_Hole_Collsision" type="CollisionShape" parent="Drop_Hole/Drop_Hole"]
 shape = SubResource( 9 )
 
 [node name="Table_Body" type="MeshInstance" parent="."]
 mesh = SubResource( 10 )
 material/0 = null
 
-[node name="StaticBody" type="StaticBody" parent="Table_Body"]
+[node name="Table_Body" type="StaticBody" parent="Table_Body"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Table_Body/StaticBody"]
+[node name="Table_Body_Collsiion" type="CollisionShape" parent="Table_Body/Table_Body"]
 shape = SubResource( 11 )
 
 [node name="Rods" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0280926, -0.0216558 )
-
-[editable path="Rods"]
